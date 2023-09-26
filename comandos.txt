@@ -1,0 +1,21 @@
+dotnet new sln --name WPFlix
+dotnet new mvc -f net6.0 -o Flix
+dotnet sln add Flix\Flix.csproj
+
+Site Nuget
+
+--Pacotes do Entity para acesso a dados
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.22
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.22
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.2
+
+--Pacote do Identity - gestão de usuários
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.22
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.16
+
+dotnet ef
+dotnet ef migrations add criar-banco
+dotnet ef database update
+
+dotnet dev-certs https
