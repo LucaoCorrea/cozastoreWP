@@ -29,4 +29,6 @@ public class Categoria
     public byte? CategoriaPaiId { get; set; }
     [ForeignKey("CategoriaPaiId")]
     public Categoria CategoriaPai { get; set; }
+
+    public ICollection<ProdutoCategoria> Produtos { get; set; }
 }

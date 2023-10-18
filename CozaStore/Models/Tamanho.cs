@@ -19,6 +19,6 @@ public class Tamanho
     [StringLength(60, ErrorMessage = "O Nome deve possuir no máximo 60 caracteres")]
     public string Name { get; set; }
 
-
+    public ICollection<ProdutoEstoque> Estoques { get; set; }
 
 }

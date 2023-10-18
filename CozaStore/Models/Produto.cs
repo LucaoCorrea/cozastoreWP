@@ -55,4 +55,9 @@ public class Produto
     [StringLength(20, ErrorMessage = "A Dimensão deve possuir no máximo 20 caracteres")]
     public string Dimensao { get; set; }
 
+    public ICollection<ProdutoAvalicao> Avalicoes { get; set; }       
+    public ICollection<ProdutoCategoria> Categorias { get; set; }
+    public ICollection<ProdutoTag> Tags { get; set; }
+    public ICollection<ListaDesejo> ListaDesejos { get; set; }
+    public ICollection<ProdutoEstoque> Estoques { get; set; }
 }

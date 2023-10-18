@@ -25,4 +25,8 @@ public class Usuario
 
      [StringLength(300)]
     public string Foto { get; set; }
+
+    public ICollection<ProdutoAvalicao> Avalicoes { get; set; }
+
+    public ICollection<ListaDesejo> ListaDesejos { get; set; }
 }
