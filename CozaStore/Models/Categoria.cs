@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CozaStore.Models;
 
-    [Table("Produto")]
+[Table("Categoria")]
 public class Categoria
 {
     [Key]
